@@ -118,23 +118,3 @@ TEMPLATE_DIRS = (
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
-
-LOGGING = {
-    'version'  : 1,
-    'handlers' : {
-        'logfile' : {
-            'level'       : 'INFO',
-            'class'       : 'logging.handlers.RotatingFileHandler',
-            'filename'    : os.path.join(BASE_DIR,'moments/logs/log.txt'),
-            'maxBytes'    : 50000,
-            'backupCount' : 2,
-            'formatter'   : 'standard',
-        },
-    },
-    'loggers' : {
-        'moments' : {
-            'handlers' : ['logfile'],
-            'level'    : 'DEBUG',
-        },              
-    }
-}
