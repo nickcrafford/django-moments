@@ -1,4 +1,4 @@
 django-moments
 ==============
 
-Experimental photo gallery web app
+Experimental single page photo gallery web app
