@@ -1,0 +1,56 @@
+.moment_caption_input {
+	width:      200px;
+	height:     78px;
+	margin-top: 0px;
+}
+
+.moment_image_preview {
+	width: 125px;
+	border: 2px solid #EFEFEF;
+}
+
+.moment_image_rotate_90 {
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);	
+}
+
+.moment_image_rotate_180 {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);	
+}
+
+.moment_image_rotate_-90 {
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);	
+}
+
+.moment_image_rotate_-180 {
+    -moz-transform:rotate(-180deg);
+    -webkit-transform:rotate(-180deg);
+    -o-transform:rotate(-180deg);
+    -ms-transform:rotate(-180deg);	
+}
+
+.moment_image_cont_90 {
+	height: 125px;
+	margin-top: 40px;
+}
+
+.moment_image_cont_-90 {
+	height: 125px;
+	margin-top: 40px;	
+}
+
+.moment_caption_input_90 {
+	height: 162px;
+}
+
+.moment_caption_input_-90 {
+	height: 162px;
+}

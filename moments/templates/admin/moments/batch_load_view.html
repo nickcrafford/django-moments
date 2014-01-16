@@ -1,0 +1,29 @@
+{% extends "admin/base_site.html" %}
+{% load i18n %}
+{% block breadcrumbs %}
+<div class="breadcrumbs">
+  <a href="../../../">{% trans "Home" %}</a> &rsaquo;
+  <a href="../../">{{ app_label|capfirst|escape }}</a> &rsaquo;
+  <a href="../">{{ opts.verbose_name_plural|capfirst|escape }}</a> &rsaquo; Upload Moments
+</div>
+{% endblock %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css" />
+<div id="content-main">
+  <form method="post" action="/admin/base/moment/upload-zip/" {% if form.is_multipart %}enctype="multipart/form-data"{% endif %}>
+  {% csrf_token %}
+  <div>
+    <fieldset style="padding: 10px;" class="module aligned">
+      {{ form.non_field_errors }}
+      <div style="margin-bottom: 25px;">Upload a zip file containing multiple moments (images). </div>
+      {{ form.file.errors }}
+      <label for="id_file">Choose zip file:</label><input id="id_file" name="file" type="file">
+    </fieldset>
+    <div class="submit-row">
+      <input type="button" value="Cancel upload" onclick="top.location = '/admin/base/moment/';">
+      <input type="submit" value="Upload zip file" class="default">
+    </div>
+  </div>
+  </form>
+</div>
+{% endblock %}
